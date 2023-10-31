@@ -16,7 +16,7 @@ import { PostsModule } from './posts/posts.module';
       password: 'postgres',
       database: 'postgres',
       entities: [PostsModel,],
-      synchronize: true,
+      synchronize: true, // DB에 바로 적용
 
     }),
   ], //다른 모듈을 불러올 때 사용하는 것 

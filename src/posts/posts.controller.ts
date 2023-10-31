@@ -38,7 +38,7 @@ export class PostsController {
           // 파라미터 이름은 'id', 이건 스트링 값으로 타입 지정 
   getPost(@Param('id') id: string) { // 모든 파라미터 값은 별도의 작업을 해주지 않는 이상 기본 스트링으로 들어간다.
     return this.postsService.getPostById(+id); // number 예상하므로 + 붙여줌 
-  }
+  } 
 
   // 3) POST /posts
   //  POST를 생성한다
